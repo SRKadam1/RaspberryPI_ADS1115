@@ -1,4 +1,4 @@
-# RaspberryPI_ADS1115
+# RaspberryPi_ADS1115
 
 This Python (not CircuitPython) code is intended for collecting Analog-to-Digital Converter (ADC) counts with a timestamp. 
 
