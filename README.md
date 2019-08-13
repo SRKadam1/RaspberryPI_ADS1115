@@ -19,8 +19,7 @@ The microcontroller-ADC wiring is described in [Adafruit's tutorial](https://lea
 
 This code assumes __two__ microcontrollers. The first is controlling some process which produces analog measurements. The second is a Raspberry Pi communicating with the ADS1115 chip. Since both mirocontrollers control events on independent timelines, timestamps are created to correlate the two chronologies. 
 
-## Use
-### Sampling Rate  
+## Usage- Sampling Rate  
 Generally, this code returns 820 samples per second. The ADS1115 datasheet sets an upper limit of 860 samples per second. While the Raspberry Pi's bus speed can be changed from the default 100000 to 400000 ((https://www.raspberrypi-spy.co.uk/2018/02/change-raspberry-pi-i2c-bus-speed/)), doing so does not positively impact the sampling rate of the afore-described setup. It results in ADC data being read by the Raspberry Pi multiple times (data duplication). 
 
 If you are willing to trade precision for speed, the [ADS1015](https://www.adafruit.com/product/1083) is a 12-bit ADC with an upper limit of 3,300 samples per second.
