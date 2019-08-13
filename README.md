@@ -2,7 +2,7 @@
 
 This Python (not CircuitPython) code is intended for collecting continuous, differential Analog-to-Digital Converter (ADC) counts with a timestamp. 
 
-The Raspberry Pi will collect data and save to a csv file as long as it receives a HIGH signal. The code is cyclic; once it has been started from the terminal or command line, it will repeat the process of waiting, collecting data, and storing data until interrupted. 
+The Raspberry Pi will collect data and save to a csv file as long as it receives a HIGH signal. The code is cyclic; once it has been started from the terminal, it will repeat the process of waiting, collecting data, and storing data until interrupted. 
 
 ## Equipment 
 
